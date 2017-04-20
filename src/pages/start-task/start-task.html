@@ -1,0 +1,20 @@
+﻿<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Start Task</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-content>
+      Press this button when you start a new task.
+      <button ion-button large primary (click)="startTaskNow()">Start Task</button>
+    </ion-card-content>
+  </ion-card>
+
+  <p>Tap button below if the task occured in the past.</p>
+  <button ion-button block secondary (click)="goToStartTask()">Enter past task details</button>
+</ion-content>
